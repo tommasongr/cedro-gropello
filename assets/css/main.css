@@ -370,12 +370,6 @@ td,
 th {
   padding: 0; }
 
-html {
-  box-sizing: border-box; }
-
-*, *::after, *::before {
-  box-sizing: inherit; }
-
 @-ms-viewport {
   width: device-width; }
 @media (max-width: 640px) {
@@ -473,7 +467,7 @@ a {
       .section-1 .container .story-container::after {
         clear: both;
         content: "";
-        display: block; }
+        display: table; }
       .section-1 .container .story-container .story {
         position: relative;
         max-width: 47%;
@@ -496,14 +490,18 @@ a {
         height: 100%;
         margin: 0 auto;
         padding-top: 30px; }
+        .section-1 .container .skill-container .certification::after {
+          clear: both;
+          content: "";
+          display: block; }
         .section-1 .container .skill-container .certification .certification-circle {
           display: inline-block;
-          width: 120px;
-          height: 120px;
+          width: 100%;
+          padding-bottom: calc(25% - 87.5px);
           border-radius: 50%;
           background-color: red;
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-          margin: 0 50px;
+          margin: 0 auto;
           transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
           cursor: pointer; }
           .section-1 .container .skill-container .certification .certification-circle:hover {
@@ -511,12 +509,14 @@ a {
 
 @media (min-width: 1224px) {
   .section-1 {
-    box-shadow: 0 -100px 200px -20px rgba(0, 0, 0, 0.19); } }
+    box-shadow: 0 -100px 200px -20px rgba(0, 0, 0, 0.19); }
+    .section-1 .container .skill-container .certification .certification-circle {
+      width: calc(25% - 87.5px);
+      float: left;
+      margin-left: 70px; } }
 @media (max-width: 1224px) {
   .section-1 .container .story-container .headshot {
-    width: 50%; }
-  .section-1 .container .skills-container .certification {
-    width: 30%; } }
+    width: 50%; } }
 @media (max-width: 1024px) {
   .section-1 .container .story-container .story {
     max-width: 100%;
@@ -558,10 +558,7 @@ a {
       margin-bottom: 50px; }
     .section-2 .container .gallery-container {
       position: relative;
-      width: 100%;
-      max-width: 1200px;
-      margin-left: auto;
-      margin-right: auto; }
+      width: 100%; }
       .section-2 .container .gallery-container::after {
         clear: both;
         content: "";
@@ -569,25 +566,13 @@ a {
       .section-2 .container .gallery-container::after {
         clear: both;
         content: "";
-        display: block; }
+        display: table; }
       .section-2 .container .gallery-container .card {
         position: relative;
         width: 100%;
-        padding-bottom: 23.99379%;
         margin: 0 auto;
-        margin-bottom: 1em;
         cursor: pointer;
-        overflow: hidden;
-        float: left;
-        display: block;
-        margin-right: 1.34162%;
-        width: 23.99379%; }
-        .section-2 .container .gallery-container .card:last-child {
-          margin-right: 0; }
-        .section-2 .container .gallery-container .card:nth-child(4n) {
-          margin-right: 0; }
-        .section-2 .container .gallery-container .card:nth-child(4n+1) {
-          clear: left; }
+        overflow: hidden; }
         .section-2 .container .gallery-container .card .img-card {
           position: absolute;
           width: 100%;
@@ -614,57 +599,27 @@ a {
         .section-2 .container .gallery-more .material-icons:hover {
           color: #1E2529; }
 
-#gallery-image-1 {
-  background-image: url(/assets/img/foto-centro/cedro-gropello-foto-ingresso-1.jpg); }
-
-#gallery-image-2 {
-  background-image: url(/assets/img/foto-centro/cedro-gropello-foto-ingresso-2.jpg); }
-
-#gallery-image-3 {
-  background-image: url(/assets/img/foto-centro/cedro-gropello-foto-corridoio.jpg); }
-
-#gallery-image-4 {
-  background-image: url(/assets/img/foto-centro/cedro-gropello-foto-sala-1.jpg); }
-
-#gallery-image-5 {
-  background-image: url(/assets/img/foto-centro/cedro-gropello-foto-sala-2.jpg); }
-
-#gallery-image-6 {
-  background-image: url(/assets/img/foto-centro/cedro-gropello-foto-sala-3-1.jpg); }
-
-#gallery-image-7 {
-  background-image: url(/assets/img/foto-centro/cedro-gropello-foto-sala-3-2.jpg); }
-
-#gallery-image-8 {
-  background-image: url(/assets/img/foto-centro/cedro-gropello-foto-sala-3-3.jpg); }
-
+@media (min-width: 1224px) {
+  .section-2 .container .gallery-container .card {
+    padding-bottom: calc(25% - 0.625em);
+    margin-bottom: 0.5em;
+    width: calc(25% - 0.625em);
+    float: left;
+    margin-left: 0.5em; } }
 @media (max-width: 1224px) {
   .section-2 .container .gallery-container .card {
+    padding-bottom: calc(50% - 0.75em);
+    margin-bottom: 0.5em;
+    width: calc(50% - 0.75em);
     float: left;
-    display: block;
-    margin-right: 1.34162%;
-    width: 49.32919%;
-    padding-bottom: 49.32919%;
-    margin-bottom: 0.6em; }
-    .section-2 .container .gallery-container .card:last-child {
-      margin-right: 0; }
-    .section-2 .container .gallery-container .card:nth-child(2n) {
-      margin-right: 0; }
-    .section-2 .container .gallery-container .card:nth-child(2n+1) {
-      clear: left; } }
+    margin-left: 0.5em; } }
 @media (max-width: 768px) {
   .section-2 .container .gallery-container .card {
+    padding-bottom: 100%;
+    margin-bottom: 0.5em;
+    width: calc(100% - 1em);
     float: left;
-    display: block;
-    margin-right: 1.34162%;
-    width: 100%;
-    padding-bottom: 100%; }
-    .section-2 .container .gallery-container .card:last-child {
-      margin-right: 0; }
-    .section-2 .container .gallery-container .card:nth-child(1n) {
-      margin-right: 0; }
-    .section-2 .container .gallery-container .card:nth-child(1n+1) {
-      clear: left; }
+    margin-left: 0.5em; }
   .section-2 .container .gallery-container .card:nth-last-of-type(-n+2) {
     display: none; } }
 .section-3 {
@@ -685,7 +640,7 @@ a {
       .section-3 .container .partners-container::after {
         clear: both;
         content: "";
-        display: block; }
+        display: table; }
       .section-3 .container .partners-container .partners-1, .section-3 .container .partners-container .partners-2, .section-3 .container .partners-container .partners-3 {
         position: relative;
         height: 170px;
@@ -704,6 +659,7 @@ a {
           left: 50%;
           transform: translate(-50%, -50%); }
       .section-3 .container .partners-container .partners-1 {
+        float: left;
         margin-left: 150px; }
         .section-3 .container .partners-container .partners-1 .partners-1-img {
           background-image: url(/assets/img/rosemary-imoesiri.jpg); }
@@ -725,7 +681,7 @@ a {
       .section-3 .container .pandhy-s-container .special-intro-container::after {
         clear: both;
         content: "";
-        display: block; }
+        display: table; }
       .section-3 .container .pandhy-s-container .special-intro-container .special-intro-text {
         position: relative;
         max-width: 45%;
@@ -746,7 +702,7 @@ a {
       .section-3 .container .pnei-container .special-intro-container::after {
         clear: both;
         content: "";
-        display: block; }
+        display: table; }
       .section-3 .container .pnei-container .special-intro-container .special-intro-text {
         position: relative;
         max-width: 45%;
@@ -767,7 +723,7 @@ a {
       .section-3 .container .crystal-nails-container .special-intro-container::after {
         clear: both;
         content: "";
-        display: block; }
+        display: table; }
       .section-3 .container .crystal-nails-container .special-intro-container .special-intro-text {
         position: relative;
         max-width: 45%;
@@ -823,10 +779,13 @@ a {
   display: block; }
 
 @media (max-width: 1224px) {
-  .section-3 .container .partners-container .partners-1 {
-    left: 200px; }
-  .section-3 .container .partners-container .partners-2 {
-    right: 200px; } }
+  .section-3 .container .pandhy-s-container .special-intro-container .special-intro-text, .section-3 .container .pnei-container .special-intro-container .special-intro-text, .section-3 .container .crystal-nails-container .special-intro-container .special-intro-text {
+    max-width: 100%; }
+  .section-3 .container .pandhy-s-container .special-intro-container .special-logo, .section-3 .container .pnei-container .special-intro-container .special-logo, .section-3 .container .crystal-nails-container .special-intro-container .special-logo {
+    position: relative;
+    width: 100%;
+    height: 12em;
+    float: left; } }
 @media (max-width: 1024px) {
   .section-3 .container .pasta-di-zucchero-container .pasta-di-zucchero {
     max-width: 100%;
@@ -840,50 +799,59 @@ a {
     position: relative;
     height: 200px; }
   .section-3 .container .partners-container .partners-1 {
-    left: 100px; }
-  .section-3 .container .partners-container .partners-2 {
-    right: 100px; } }
+    margin-left: 50px; }
+  .section-3 .container .partners-container .partners-3 {
+    margin-right: 50px; } }
 @media (max-width: 768px) {
-  .section-3 .container .partners-container .partners-1 {
-    left: 50px; }
-  .section-3 .container .partners-container .partners-2 {
-    right: 50px; } }
-@media (max-width: 640px) {
-  .section-3 .container .partners-container .partners-1 {
-    left: 30px; }
-  .section-3 .container .partners-container .partners-2 {
-    right: 30px; } }
-@media (max-width: 500px) {
-  .section-3 .container .partners-container .partners-1 {
-    left: 50px;
-    height: 120px;
-    width: 120px; }
-    .section-3 .container .partners-container .partners-1 .partners-1-img {
-      height: 105px;
-      width: 105px; }
-    .section-3 .container .partners-container .partners-1 .circle-selected {
+  .section-3 .container .partners-container .partners-1, .section-3 .container .partners-container .partners-2, .section-3 .container .partners-container .partners-3 {
+    height: 140px;
+    width: 140px; }
+    .section-3 .container .partners-container .partners-1 .partners-1-img, .section-3 .container .partners-container .partners-1 .partners-2-img, .section-3 .container .partners-container .partners-1 .partners-3-img, .section-3 .container .partners-container .partners-2 .partners-1-img, .section-3 .container .partners-container .partners-2 .partners-2-img, .section-3 .container .partners-container .partners-2 .partners-3-img, .section-3 .container .partners-container .partners-3 .partners-1-img, .section-3 .container .partners-container .partners-3 .partners-2-img, .section-3 .container .partners-container .partners-3 .partners-3-img {
+      position: absolute;
       height: 120px;
       width: 120px; }
-  .section-3 .container .partners-container .partners-2 {
-    right: 50px;
+  .section-3 .container .partners-container .circle-selected {
+    height: 140px;
+    width: 140px; }
+  .section-3 .container .partners-container .partners-1 {
+    margin-left: 0;
+    left: 0; }
+  .section-3 .container .partners-container .partners-3 {
+    margin-right: 0; } }
+@media (max-width: 500px) {
+  .section-3 .container .partners-container .partners-1, .section-3 .container .partners-container .partners-2, .section-3 .container .partners-container .partners-3 {
     height: 120px;
     width: 120px; }
-    .section-3 .container .partners-container .partners-2 .partners-2-img {
+    .section-3 .container .partners-container .partners-1 .partners-1-img, .section-3 .container .partners-container .partners-1 .partners-2-img, .section-3 .container .partners-container .partners-1 .partners-3-img, .section-3 .container .partners-container .partners-2 .partners-1-img, .section-3 .container .partners-container .partners-2 .partners-2-img, .section-3 .container .partners-container .partners-2 .partners-3-img, .section-3 .container .partners-container .partners-3 .partners-1-img, .section-3 .container .partners-container .partners-3 .partners-2-img, .section-3 .container .partners-container .partners-3 .partners-3-img {
+      position: absolute;
       height: 105px;
       width: 105px; }
-    .section-3 .container .partners-container .partners-2 .circle-selected {
-      height: 120px;
-      width: 120px; } }
+  .section-3 .container .partners-container .circle-selected {
+    height: 120px;
+    width: 120px; } }
 @media (max-width: 400px) {
-  .section-3 .container .partners-container .partners-1 {
-    left: 18px; }
-  .section-3 .container .partners-container .partners-2 {
-    right: 18px; } }
+  .section-3 .container .partners-container .partners-1, .section-3 .container .partners-container .partners-2, .section-3 .container .partners-container .partners-3 {
+    height: 100px;
+    width: 100px; }
+    .section-3 .container .partners-container .partners-1 .partners-1-img, .section-3 .container .partners-container .partners-1 .partners-2-img, .section-3 .container .partners-container .partners-1 .partners-3-img, .section-3 .container .partners-container .partners-2 .partners-1-img, .section-3 .container .partners-container .partners-2 .partners-2-img, .section-3 .container .partners-container .partners-2 .partners-3-img, .section-3 .container .partners-container .partners-3 .partners-1-img, .section-3 .container .partners-container .partners-3 .partners-2-img, .section-3 .container .partners-container .partners-3 .partners-3-img {
+      position: absolute;
+      height: 85px;
+      width: 85px; }
+  .section-3 .container .partners-container .circle-selected {
+    height: 100px;
+    width: 100px; } }
 @media (max-width: 321px) {
-  .section-3 .container .partners-container .partners-1 {
-    left: 3px; }
-  .section-3 .container .partners-container .partners-2 {
-    right: 3px; } }
+  .section-3 .container .partners-container .partners-1, .section-3 .container .partners-container .partners-2, .section-3 .container .partners-container .partners-3 {
+    height: 80px;
+    width: 80px; }
+    .section-3 .container .partners-container .partners-1 .partners-1-img, .section-3 .container .partners-container .partners-1 .partners-2-img, .section-3 .container .partners-container .partners-1 .partners-3-img, .section-3 .container .partners-container .partners-2 .partners-1-img, .section-3 .container .partners-container .partners-2 .partners-2-img, .section-3 .container .partners-container .partners-2 .partners-3-img, .section-3 .container .partners-container .partners-3 .partners-1-img, .section-3 .container .partners-container .partners-3 .partners-2-img, .section-3 .container .partners-container .partners-3 .partners-3-img {
+      position: absolute;
+      height: 70px;
+      width: 70px; }
+  .section-3 .container .partners-container .circle-selected {
+    height: 80px;
+    width: 80px;
+    border: solid 3px #FF6B6B; } }
 .section-4 {
   position: relative;
   padding: 50px;
@@ -905,7 +873,7 @@ a {
       .section-4 .container .testimonials-container::after {
         clear: both;
         content: "";
-        display: block; }
+        display: table; }
       .section-4 .container .testimonials-container .client_profile_thumb {
         position: relative;
         width: 185px;
@@ -955,7 +923,7 @@ a {
       .section-5 .container .story-container::after {
         clear: both;
         content: "";
-        display: block; }
+        display: table; }
       .section-5 .container .story-container .story {
         position: relative;
         max-width: 45%;
@@ -1016,7 +984,7 @@ a {
   .accordion-section-content::after {
     clear: both;
     content: "";
-    display: block; }
+    display: table; }
   .accordion-section-content ul {
     list-style: none;
     margin-right: 50px;
@@ -1070,7 +1038,7 @@ a {
       .section-6 .container .info-container::after {
         clear: both;
         content: "";
-        display: block; }
+        display: table; }
       .section-6 .container .info-container .info {
         max-width: 45%;
         float: left;
