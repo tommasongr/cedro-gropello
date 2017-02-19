@@ -1,0 +1,118 @@
+.footer
+  position: relative
+  bottom: 0
+  width: 100%
+
+  .footer-big
+    position: relative
+    height: 100%
+    background-color: $color-footer-1
+    padding: 50px
+
+    .footer-big-container
+      position: relative
+      width: 100%
+      max-width: 1200px
+      margin: 0 auto
+
+      .title-container
+        width: 100%
+
+        h1
+          color: white
+          font-size: 50px
+          line-height: 60px
+          margin-bottom: 0
+
+        h3
+          color: white
+          line-height: 30px
+          margin-bottom: 0
+
+  .footer-small
+    position: relative
+    height: 55px
+    padding: 0 50px
+    background-color: $color-footer-2
+
+    .footer-small-container
+      position: relative
+      width: 100%
+      max-width: 1200px
+      margin: 0 auto
+      top: 50%
+      transform: translateY(-50%)
+      @include columns(3)
+
+      p
+        position: relative
+        margin: 0
+        color: white
+
+      .author
+        text-align: center
+
+        .material-icons
+          line-height: 0
+          vertical-align: sub
+          color: $color-love
+
+      .info-text
+        position: relative
+        text-align: right
+        overflow: auto
+
+        a
+          color: white
+
+          .material-icons
+            font-size: 24px
+            vertical-align: sub
+            margin-right: 8px
+
+@media (max-width: $ipad-landscape)
+  .footer
+    .footer-small
+      height: 150px
+      padding: 25px 0
+
+      .footer-small-container
+        height: 100%
+        @include columns(1)
+        p
+          text-align: center
+          margin: auto
+          width: 100%
+
+        .author
+          position: absolute
+          right: 50%
+          top: 50%
+          transform: translate(50%, -50%)
+
+        .info-text
+          text-align: center
+          bottom: 0
+          position: absolute
+          right: 50%
+          transform: translateX(50%)
+
+@media (max-width: $mobile-big)
+  .footer
+    .footer-small
+      .footer-small-container
+        p
+          font-size: 17px
+
+          i
+            font-size: 20px!important
+
+@media (max-width: $mobile-portrait)
+  .footer
+    .footer-small
+      .footer-small-container
+        p
+          font-size: 12px
+
+          i
+            font-size: 18px!important

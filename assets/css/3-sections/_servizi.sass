@@ -1,0 +1,139 @@
+.section-5
+  position: relative
+  padding: 50px
+  background-color: white
+
+  .container
+    position: relative
+    width: 100%
+    max-width: 1200px
+
+    .title-container
+      width: 100%
+      text-align: center
+      margin-bottom: 50px
+
+    .story-container
+      position: relative
+      width: 100%
+      margin-bottom: 50px
+      @include clearfix
+
+      .story
+        position: relative
+        max-width: 45%
+        float: left
+
+    .accordion-container
+      position: relative
+      width: 45%
+      height: 100%
+      float: right
+      box-shadow: $shadow-2
+
+/*----- Accordion -----*/
+.accordion, .accordion *
+  -webkit-box-sizing:border-box
+  -moz-box-sizing:border-box
+  box-sizing:border-box
+
+.accordion
+  overflow: hidden
+  border-radius: 3px
+
+/*----- Section Titles -----*/
+.accordion-section-title
+  width: 100%
+  padding: 15px
+  display: inline-block
+  transition: all linear 0.15s
+  /* Type */
+  font-size: 20px
+  font-family: 'Roboto', sans-serif
+  -webkit-font-smoothing: antialiased
+  color: $color-element-dark
+  text-decoration: none
+
+  .expand-more
+    position: absolute
+    font-size: 35px
+    right: 20px
+    line-height: 25px
+    opacity: 0.6
+
+  .expand-less
+    position: absolute
+    font-size: 35px
+    right: 20px
+    line-height: 25px
+    display: none
+
+.accordion-section
+  background-color: white
+
+  &:nth-child(2n+1)
+    background-color: $color-bg-gray
+
+.accordion-section-title.active, .accordion-section-title:hover
+  /* Type */
+  text-decoration: none
+
+.accordion-section:last-child .accordion-section-title
+  border-bottom: none
+
+/*----- Section Content -----*/
+.accordion-section-content
+  padding: 0 15px
+  display: none
+  @include clearfix
+
+  ul
+    list-style: none
+    margin-right: 50px
+    display: inline-block
+    margin-right: 0
+    float: left
+
+    li
+      font-size: 16px
+      font-family: 'Roboto', sans-serif
+      color: $color-element-dark
+      margin: 15px 0
+
+    .sub-section-title
+      list-style: none
+
+@media (min-width: $ipad-landscape)
+  .accordion-section-title:hover .expand-more
+    opacity: 1
+    transition: $transition-shadows
+
+@media (max-width: $ipad-landscape)
+
+@media (max-width: $ipad-landscape) and (min-width: $ipad-portrait)
+  .section-5
+    .container
+      .accordion-container
+        width: 50%
+
+@media (max-width: $ipad-portrait)
+  .section-5
+
+    .container
+
+      .story-container
+        margin-bottom: 0
+
+        .story
+          width: 100%
+          max-width: 100%
+          float: none
+          margin-bottom: 50px
+
+        .accordion-container
+          width: 100%
+          float: none
+
+@media (max-width: 490px)
+  .accordion-section-title
+    max-width: 75%

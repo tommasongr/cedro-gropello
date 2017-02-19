@@ -1,0 +1,278 @@
+.section-3
+  position: relative
+  padding: 50px
+  background-color: white
+
+  .container
+    position: relative
+    width: 100%
+    max-width: 1200px
+
+    .title-container
+      width: 100%
+      text-align: center
+      margin-bottom: 50px
+
+    .partners-container
+      width: 100%
+      margin-bottom: 50px
+      @include clearfix
+
+      .partners-1, .partners-2, .partners-3
+        position: relative
+        height: 170px
+        width: 170px
+        display: inline-block
+        cursor: pointer
+
+        .partners-1-img, .partners-2-img, .partners-3-img
+          position: absolute
+          height: 150px
+          width: 150px
+          border-radius: 50%
+          background-size: cover
+          background-repeat: no-repeat
+          background-position: center center
+          top: 50%
+          left: 50%
+          transform: translate(-50%, -50%)
+
+      .partners-1
+        margin-left: 150px
+
+        .partners-1-img
+          background-image: url(/assets/img/rosemary-imoesiri.jpg)
+
+      .partners-2
+        position: absolute
+        left: 50%
+        transform: translate(-50%)
+
+        .partners-2-img
+          background-image: url(/assets/img/rosemary-imoesiri.jpg)
+
+      .partners-3
+        float: right
+        margin-right: 150px
+
+        .partners-3-img
+          background-image: url(/assets/img/rosemary-imoesiri.jpg)
+
+    .pandhy-s-container
+
+      .special-intro-container
+        position: relative
+        width: 100%
+        margin-bottom: 50px
+        @include clearfix
+
+        .special-intro-text
+          position: relative
+          max-width: 45%
+          float: left
+
+        .special-logo
+          position: absolute
+          width: 45%
+          height: 100%
+          right: 0
+          background-image: url(/assets/img/pandhy-s.png)
+          background-size: contain
+          background-position: center center
+          background-repeat: no-repeat
+
+    .pnei-container
+
+      .special-intro-container
+        position: relative
+        width: 100%
+        margin-bottom: 50px
+        @include clearfix
+
+        .special-intro-text
+          position: relative
+          max-width: 45%
+          float: left
+
+        .special-logo
+          position: absolute
+          width: 45%
+          height: 100%
+          right: 0
+          background-image: url(/assets/img/pandhy-s.png)
+          background-size: contain
+          background-position: center center
+          background-repeat: no-repeat
+
+    .crystal-nails-container
+
+      .special-intro-container
+        position: relative
+        width: 100%
+        margin-bottom: 50px
+        @include clearfix
+
+        .special-intro-text
+          position: relative
+          max-width: 45%
+          float: left
+          
+        .special-logo
+          position: absolute
+          width: 45%
+          height: 100%
+          right: 0
+          background-image: url(/assets/img/pandhy-s.png)
+          background-size: contain
+          background-position: center center
+          background-repeat: no-repeat
+
+
+    .video-container
+      position: relative
+      padding-bottom: 56.25%
+      height: 0
+
+      .video-thumb
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: url(/assets/img/pasta-di-zucchero.jpg), rgba(0, 13, 15, 0.3)
+        background-blend-mode: multiply
+        background-size: cover
+        cursor: pointer
+
+        i
+          position: relative
+          color: white
+          font-size: 120px
+          top: 50%
+          left: 50%
+          transform: translate(-50%, -50%)
+
+      iframe
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+
+.circle-selected
+  position: relative
+  height: 170px
+  width: 170px
+  border: solid 4px $color-love
+  border-radius: 50%
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  //display: none
+
+.circle-show
+  display: block
+
+@media (max-width: $ipad-landscape)
+  .section-3
+    .container
+      .partners-container
+        .partners-1
+          left: 200px
+
+        .partners-2
+          right: 200px
+
+@media (max-width: $ipad-portrait)
+  .section-3
+    .container
+      .pasta-di-zucchero-container
+        .pasta-di-zucchero
+          max-width: 100%
+          width: 100%
+          float: none
+          margin-bottom: 50px
+
+        .pandhy-s-logo
+          max-width: 100%
+          width: 100%
+          float: none
+          position: relative
+          height: 200px
+
+      .partners-container
+        .partners-1
+          left: 100px
+
+        .partners-2
+          right: 100px
+
+@media (max-width: $mobile-landscape)
+  .section-3
+    .container
+      .partners-container
+        .partners-1
+          left: 50px
+
+        .partners-2
+          right: 50px
+
+@media (max-width: $mobile-big)
+  .section-3
+    .container
+      .partners-container
+        .partners-1
+          left: 30px
+
+        .partners-2
+          right: 30px
+
+@media (max-width: 500px)
+  .section-3
+    .container
+      .partners-container
+        .partners-1
+          left: 50px
+          height: 120px
+          width: 120px
+
+          .partners-1-img
+            height: 105px
+            width: 105px
+
+          .circle-selected
+            height: 120px
+            width: 120px
+
+        .partners-2
+          right: 50px
+          height: 120px
+          width: 120px
+
+          .partners-2-img
+            height: 105px
+            width: 105px
+
+          .circle-selected
+            height: 120px
+            width: 120px
+
+@media (max-width: 400px)
+  .section-3
+    .container
+      .partners-container
+        .partners-1
+          left: 18px
+
+        .partners-2
+          right: 18px
+
+@media (max-width: $mobile-portrait)
+  .section-3
+    .container
+      .partners-container
+        .partners-1
+          left: 3px
+
+        .partners-2
+          right: 3px

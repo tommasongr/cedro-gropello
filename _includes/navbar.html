@@ -1,0 +1,23 @@
+<div class="navbar">
+  <div class="container center">
+
+    <div class="logo">
+      <a href="{{ site.baseurl }}">Il Cedro</a>
+    </div>
+
+    <div class="menu">
+      <ul>
+        {% for menu in site.data.settings.menus %}
+        <li><a href="{{ menu.url }}" class="link-menu">{{ menu.name }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="phone-nav">
+      <a href="tel:+393427341131">
+        <i class="material-icons grow">phone</i>
+      </a>
+    </div>
+
+  </div>
+</div>
