@@ -1,8 +1,5 @@
 ---
 testimonials:
-- avatar: ''
-  name: ''
-  quote: ''
 - avatar: assets/img/clients/face-janedoe.jpg
   name: Jane Doe
   quote: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
