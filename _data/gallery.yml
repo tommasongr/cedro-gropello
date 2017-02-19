@@ -1,9 +1,9 @@
 ---
 gallery-images:
-- photo: assets/img/foto-centro/cedro-gropello-foto-sala-3-2.jpg
-  name: Sala 3-2
 - photo: assets/img/foto-centro/cedro-gropello-foto-sala-3-3.jpg
   name: Sala 3-3
+- photo: assets/img/foto-centro/cedro-gropello-foto-sala-3-2.jpg
+  name: Sala 3-2
 - photo: assets/img/foto-centro/cedro-gropello-foto-sala-3-1.jpg
   name: Sala 3-1
 - photo: assets/img/foto-centro/cedro-gropello-foto-sala-2.jpg
