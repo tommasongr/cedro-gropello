@@ -44,24 +44,33 @@
         height: 100%
         margin: 0 auto
         padding-top: 30px
+        @include grid-container
 
         .certification-circle
           display: inline-block
-          width: 120px
-          height: 120px
+          width: 100%
+          padding-bottom: calc(25% - 87.5px)
           border-radius: 50%
           background-color: red
           box-shadow: $shadow-2
-          margin: 0 50px
+          margin: 0 auto
           transition: $transition-shadows
           cursor: pointer
 
           &:hover
             box-shadow: $shadow-3
 
+$certification-grid-desk: (gutter: 70px)
+
 @media (min-width: $ipad-landscape)
   .section-1
     box-shadow: 0 -100px 200px -20px rgba(0,0,0,0.19)
+    .container
+      .skill-container
+        .certification
+          .certification-circle
+            @include grid-column(3, $certification-grid-desk)
+
 
 @media (max-width: $ipad-landscape)
   .section-1
@@ -70,9 +79,6 @@
         .headshot
           width: 50%
 
-      .skills-container
-        .certification
-          width: 30%
 
 @media (max-width: $ipad-portrait)
   .section-1

@@ -38,6 +38,7 @@
           transform: translate(-50%, -50%)
 
       .partners-1
+        float: left
         margin-left: 150px
 
         .partners-1-img
@@ -116,7 +117,7 @@
           position: relative
           max-width: 45%
           float: left
-          
+
         .special-logo
           position: absolute
           width: 45%
@@ -176,12 +177,16 @@
 @media (max-width: $ipad-landscape)
   .section-3
     .container
-      .partners-container
-        .partners-1
-          left: 200px
+      .pandhy-s-container, .pnei-container, .crystal-nails-container
+        .special-intro-container
+          .special-intro-text
+            max-width: 100%
+          .special-logo
+            position: relative
+            width: 100%
+            height: 12em
+            float: left
 
-        .partners-2
-          right: 200px
 
 @media (max-width: $ipad-portrait)
   .section-3
@@ -202,77 +207,92 @@
 
       .partners-container
         .partners-1
-          left: 100px
+          margin-left: 50px
 
-        .partners-2
-          right: 100px
+        .partners-3
+          margin-right: 50px
 
 @media (max-width: $mobile-landscape)
   .section-3
     .container
       .partners-container
-        .partners-1
-          left: 50px
+        .partners-1, .partners-2, .partners-3
+          height: 140px
+          width: 140px
 
-        .partners-2
-          right: 50px
+          .partners-1-img, .partners-2-img, .partners-3-img
+            position: absolute
+            height: 120px
+            width: 120px
+
+        .circle-selected
+          height: 140px
+          width: 140px
+
+        .partners-1
+          margin-left: 0
+          left: 0
+
+        .partners-3
+          margin-right: 0
 
 @media (max-width: $mobile-big)
   .section-3
     .container
       .partners-container
-        .partners-1
-          left: 30px
 
-        .partners-2
-          right: 30px
 
 @media (max-width: 500px)
   .section-3
     .container
       .partners-container
-        .partners-1
-          left: 50px
+
+        .partners-1, .partners-2, .partners-3
           height: 120px
           width: 120px
 
-          .partners-1-img
+          .partners-1-img, .partners-2-img, .partners-3-img
+            position: absolute
             height: 105px
             width: 105px
 
-          .circle-selected
-            height: 120px
-            width: 120px
-
-        .partners-2
-          right: 50px
+        .circle-selected
           height: 120px
           width: 120px
-
-          .partners-2-img
-            height: 105px
-            width: 105px
-
-          .circle-selected
-            height: 120px
-            width: 120px
 
 @media (max-width: 400px)
   .section-3
     .container
       .partners-container
-        .partners-1
-          left: 18px
 
-        .partners-2
-          right: 18px
+        .partners-1, .partners-2, .partners-3
+          height: 100px
+          width: 100px
+
+          .partners-1-img, .partners-2-img, .partners-3-img
+            position: absolute
+            height: 85px
+            width: 85px
+
+        .circle-selected
+          height: 100px
+          width: 100px
 
 @media (max-width: $mobile-portrait)
   .section-3
     .container
       .partners-container
-        .partners-1
-          left: 3px
 
-        .partners-2
-          right: 3px
+        .partners-1, .partners-2, .partners-3
+          height: 80px
+          width: 80px
+
+          .partners-1-img, .partners-2-img, .partners-3-img
+            position: absolute
+            height: 70px
+            width: 70px
+
+        .circle-selected
+          height: 80px
+          width: 80px
+          border: solid 3px $color-love

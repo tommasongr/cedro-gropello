@@ -16,19 +16,15 @@
     .gallery-container
       position: relative
       width: 100%
-      @include outer-container
+      @include grid-container
       @include clearfix
 
       .card
         position: relative
         width: 100%
-        padding-bottom: 23.99379%
         margin: 0 auto
-        margin-bottom: 1em
         cursor: pointer
         overflow: hidden
-        @include span-columns(3)
-        @include omega(4n)
 
         .img-card
           position: absolute
@@ -60,48 +56,35 @@
         &:hover
           color: $color-element-dark
 
-#gallery-image-1
-  background-image: url(/assets/img/foto-centro/cedro-gropello-foto-ingresso-1.jpg)
+$card-grid-desk: (gutter: 0.5em)
+$card-grid-ipad: (gutter: 0.5em)
 
-#gallery-image-2
-  background-image: url(/assets/img/foto-centro/cedro-gropello-foto-ingresso-2.jpg)
-
-#gallery-image-3
-  background-image: url(/assets/img/foto-centro/cedro-gropello-foto-corridoio.jpg)
-
-#gallery-image-4
-  background-image: url(/assets/img/foto-centro/cedro-gropello-foto-sala-1.jpg)
-
-#gallery-image-5
-  background-image: url(/assets/img/foto-centro/cedro-gropello-foto-sala-2.jpg)
-
-#gallery-image-6
-  background-image: url(/assets/img/foto-centro/cedro-gropello-foto-sala-3-1.jpg)
-
-#gallery-image-7
-  background-image: url(/assets/img/foto-centro/cedro-gropello-foto-sala-3-2.jpg)
-
-#gallery-image-8
-  background-image: url(/assets/img/foto-centro/cedro-gropello-foto-sala-3-3.jpg)
+@media (min-width: $ipad-landscape)
+  .section-2
+    .container
+      .gallery-container
+        .card
+          padding-bottom: calc(25% - 0.625em)
+          margin-bottom: 0.5em
+          @include grid-column(3, $card-grid-desk)
 
 @media (max-width: $ipad-landscape)
   .section-2
     .container
       .gallery-container
         .card
-          @include span-columns(6)
-          @include omega(2n)
-          padding-bottom: 49.32919%
-          margin-bottom: 0.6em
+          padding-bottom: calc(50% - 0.75em)
+          margin-bottom: 0.5em
+          @include grid-column(6, $card-grid-ipad)
 
 @media (max-width: $mobile-landscape)
   .section-2
     .container
       .gallery-container
         .card
-          @include span-columns(12)
-          @include omega(1n)
           padding-bottom: 100%
+          margin-bottom: 0.5em
+          @include grid-column(12, $card-grid-ipad)
 
 
         .card:nth-last-of-type(-n+2)
