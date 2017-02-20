@@ -31,3 +31,4 @@ exclude:
 
 exclude:
   - prepros-6.config
+  - sass.cache/
