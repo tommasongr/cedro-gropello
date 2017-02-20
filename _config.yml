@@ -31,5 +31,3 @@ exclude:
 
 exclude:
   - prepros-6.config
-  - CNAME
-  - README.md
