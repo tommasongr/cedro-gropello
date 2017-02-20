@@ -372,48 +372,20 @@ th {
 
 @-ms-viewport {
   width: device-width; }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-@media (max-width: 640px) {
-  .section-1, .section-2, .section-3, .section-4, .section-5, .section-6 {
-    padding: 50px 15px !important; }
-
-=======
-=======
->>>>>>> Stashed changes
 
 @media (max-width: 640px) {
   .section-1, .section-2, .section-3, .section-4, .section-5, .section-6 {
     padding: 50px 15px !important; }
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
   .footer .footer-big {
     padding: 50px 15px !important; }
   .footer .footer-small {
     padding: 25px 15px !important; } }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
-=======
-
->>>>>>> Stashed changes
 * {
   z-index: 999; }
 
 h1 {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  font-family: "Montserrat", sans-serif, 700;
-=======
   font-family: 'Montserrat', sans-serif, 700;
->>>>>>> Stashed changes
-=======
-  font-family: 'Montserrat', sans-serif, 700;
->>>>>>> Stashed changes
   font-size: 35px;
   margin: 0;
   margin-bottom: 10px;
@@ -421,15 +393,7 @@ h1 {
   -webkit-font-smoothing: antialiased; }
 
 h3 {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  font-family: "Montserrat", sans-serif, 700;
-=======
   font-family: 'Montserrat', sans-serif, 700;
->>>>>>> Stashed changes
-=======
-  font-family: 'Montserrat', sans-serif, 700;
->>>>>>> Stashed changes
   font-size: 25px;
   margin: 0;
   margin-bottom: 10px;
@@ -437,15 +401,7 @@ h3 {
   -webkit-font-smoothing: antialiased; }
 
 p {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  font-family: "Roboto", sans-serif;
-=======
   font-family: 'Roboto', sans-serif;
->>>>>>> Stashed changes
-=======
-  font-family: 'Roboto', sans-serif;
->>>>>>> Stashed changes
   font-size: 20px;
   line-height: 24px;
   color: #95989A;
@@ -466,23 +422,11 @@ a {
   background-color: #59FF43; }
 
 .grow {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  transition: all 0.5s ease-in-out; }
-
-.grow:hover {
-=======
-=======
->>>>>>> Stashed changes
   transition: all .5s ease-in-out; }
 
 .grow:hover {
   -webkit-transform: scale(1.12);
   -ms-transform: scale(1.12);
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
   transform: scale(1.12); }
 
 .center {
@@ -504,23 +448,11 @@ a {
 @media (max-width: 1224px) {
   .grow {
     transition: none; }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-
-  .grow:hover {
-    transform: none; } }
-=======
-=======
->>>>>>> Stashed changes
   .grow:hover {
     -webkit-transform: none;
     -ms-transform: none;
     transform: none; } }
 
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 .section-1 {
   position: relative;
   padding: 50px;
@@ -587,23 +519,11 @@ a {
       width: calc(25% - 87.5px);
       float: left;
       margin-left: 70px; } }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-@media (max-width: 1224px) {
-  .section-1 .container .story-container .headshot {
-    width: 50%; } }
-=======
-=======
->>>>>>> Stashed changes
 
 @media (max-width: 1224px) {
   .section-1 .container .story-container .headshot {
     width: 50%; } }
 
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 @media (max-width: 1024px) {
   .section-1 .container .story-container .story {
     max-width: 100%;
@@ -628,23 +548,11 @@ a {
     .section-1 .container .skills-container .certification .certification-circle:last-of-type {
       float: none;
       margin-left: 50px; } }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-@media (max-width: 768px) {
-  .section-1 .container .story-container .headshot {
-    height: 250px; } }
-=======
-=======
->>>>>>> Stashed changes
 
 @media (max-width: 768px) {
   .section-1 .container .story-container .headshot {
     height: 250px; } }
 
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 .section-2 {
   position: relative;
   padding: 50px;
@@ -695,16 +603,8 @@ a {
         color: #95989A;
         position: absolute;
         left: 50%;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
         -webkit-transform: translate(-50%);
         -ms-transform: translate(-50%);
->>>>>>> Stashed changes
-=======
-        -webkit-transform: translate(-50%);
-        -ms-transform: translate(-50%);
->>>>>>> Stashed changes
         transform: translate(-50%);
         transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
         .section-2 .container .gallery-more .material-icons:hover {
@@ -717,14 +617,7 @@ a {
     width: calc(25% - 0.625em);
     float: left;
     margin-left: 0.5em; } }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
-=======
-
->>>>>>> Stashed changes
 @media (max-width: 1224px) {
   .section-2 .container .gallery-container .card {
     padding-bottom: calc(50% - 0.75em);
@@ -732,14 +625,7 @@ a {
     width: calc(50% - 0.75em);
     float: left;
     margin-left: 0.5em; } }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
-=======
-
->>>>>>> Stashed changes
 @media (max-width: 768px) {
   .section-2 .container .gallery-container .card {
     padding-bottom: 100%;
@@ -749,14 +635,7 @@ a {
     margin-left: 0.5em; }
   .section-2 .container .gallery-container .card:nth-last-of-type(-n+2) {
     display: none; } }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
-=======
-
->>>>>>> Stashed changes
 .section-3 {
   position: relative;
   padding: 50px;
@@ -792,16 +671,8 @@ a {
           background-position: center center;
           top: 50%;
           left: 50%;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
           -webkit-transform: translate(-50%, -50%);
           -ms-transform: translate(-50%, -50%);
->>>>>>> Stashed changes
-=======
-          -webkit-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
->>>>>>> Stashed changes
           transform: translate(-50%, -50%); }
       .section-3 .container .partners-container .partners-1 {
         float: left;
@@ -811,16 +682,8 @@ a {
       .section-3 .container .partners-container .partners-2 {
         position: absolute;
         left: 50%;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
         -webkit-transform: translate(-50%);
         -ms-transform: translate(-50%);
->>>>>>> Stashed changes
-=======
-        -webkit-transform: translate(-50%);
-        -ms-transform: translate(-50%);
->>>>>>> Stashed changes
         transform: translate(-50%); }
         .section-3 .container .partners-container .partners-2 .partners-2-img {
           background-image: url(/assets/img/rosemary-imoesiri.jpg); }
@@ -912,16 +775,8 @@ a {
           font-size: 120px;
           top: 50%;
           left: 50%;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
           -webkit-transform: translate(-50%, -50%);
           -ms-transform: translate(-50%, -50%);
->>>>>>> Stashed changes
-=======
-          -webkit-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
->>>>>>> Stashed changes
           transform: translate(-50%, -50%); }
       .section-3 .container .video-container iframe {
         position: absolute;
@@ -938,16 +793,8 @@ a {
   border-radius: 50%;
   top: 50%;
   left: 50%;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
->>>>>>> Stashed changes
-=======
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
->>>>>>> Stashed changes
   transform: translate(-50%, -50%); }
 
 .circle-show {
@@ -961,14 +808,7 @@ a {
     width: 100%;
     height: 12em;
     float: left; } }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
-=======
-
->>>>>>> Stashed changes
 @media (max-width: 1024px) {
   .section-3 .container .pasta-di-zucchero-container .pasta-di-zucchero {
     max-width: 100%;
@@ -985,14 +825,7 @@ a {
     margin-left: 50px; }
   .section-3 .container .partners-container .partners-3 {
     margin-right: 50px; } }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
-=======
-
->>>>>>> Stashed changes
 @media (max-width: 768px) {
   .section-3 .container .partners-container .partners-1, .section-3 .container .partners-container .partners-2, .section-3 .container .partners-container .partners-3 {
     height: 140px;
@@ -1009,14 +842,7 @@ a {
     left: 0; }
   .section-3 .container .partners-container .partners-3 {
     margin-right: 0; } }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
-=======
-
->>>>>>> Stashed changes
 @media (max-width: 500px) {
   .section-3 .container .partners-container .partners-1, .section-3 .container .partners-container .partners-2, .section-3 .container .partners-container .partners-3 {
     height: 120px;
@@ -1028,14 +854,7 @@ a {
   .section-3 .container .partners-container .circle-selected {
     height: 120px;
     width: 120px; } }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
-=======
-
->>>>>>> Stashed changes
 @media (max-width: 400px) {
   .section-3 .container .partners-container .partners-1, .section-3 .container .partners-container .partners-2, .section-3 .container .partners-container .partners-3 {
     height: 100px;
@@ -1047,14 +866,7 @@ a {
   .section-3 .container .partners-container .circle-selected {
     height: 100px;
     width: 100px; } }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
-=======
-
->>>>>>> Stashed changes
 @media (max-width: 321px) {
   .section-3 .container .partners-container .partners-1, .section-3 .container .partners-container .partners-2, .section-3 .container .partners-container .partners-3 {
     height: 80px;
@@ -1067,14 +879,7 @@ a {
     height: 80px;
     width: 80px;
     border: solid 3px #FF6B6B; } }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
-=======
-
->>>>>>> Stashed changes
 .section-4 {
   position: relative;
   padding: 50px;
@@ -1111,23 +916,11 @@ a {
         max-width: 75%;
         right: 0;
         top: 50%;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-        transform: translateY(-50%); }
-        .section-4 .container .testimonials-container .testimonials .client_profile_name {
-          font-family: "Roboto", sans-serif;
-=======
-=======
->>>>>>> Stashed changes
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%); }
         .section-4 .container .testimonials-container .testimonials .client_profile_name {
           font-family: 'Roboto', sans-serif;
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
           font-weight: 400;
           font-size: 35px;
           margin-bottom: 5px; }
@@ -1141,14 +934,7 @@ a {
 @media (max-width: 1224px) {
   .section-4 {
     display: none; } }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
-=======
-
->>>>>>> Stashed changes
 .section-5 {
   position: relative;
   padding: 50px;
@@ -1180,28 +966,12 @@ a {
       float: right;
       box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-/*----- Accordion ----- */
-=======
 /*----- Accordion -----*/
->>>>>>> Stashed changes
-=======
-/*----- Accordion -----*/
->>>>>>> Stashed changes
 .accordion {
   overflow: hidden;
   border-radius: 3px; }
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-/*----- Section Titles ----- */
-=======
 /*----- Section Titles -----*/
->>>>>>> Stashed changes
-=======
-/*----- Section Titles -----*/
->>>>>>> Stashed changes
 .accordion-section-title {
   width: 100%;
   padding: 15px;
@@ -1209,15 +979,7 @@ a {
   transition: all linear 0.15s;
   /* Type */
   font-size: 20px;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  font-family: "Roboto", sans-serif;
-=======
   font-family: 'Roboto', sans-serif;
->>>>>>> Stashed changes
-=======
-  font-family: 'Roboto', sans-serif;
->>>>>>> Stashed changes
   -webkit-font-smoothing: antialiased;
   color: #1E2529;
   text-decoration: none; }
@@ -1246,15 +1008,7 @@ a {
 .accordion-section:last-child .accordion-section-title {
   border-bottom: none; }
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-/*----- Section Content ----- */
-=======
 /*----- Section Content -----*/
->>>>>>> Stashed changes
-=======
-/*----- Section Content -----*/
->>>>>>> Stashed changes
 .accordion-section-content {
   padding: 0 15px;
   display: none; }
@@ -1270,15 +1024,7 @@ a {
     float: left; }
     .accordion-section-content ul li {
       font-size: 16px;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-      font-family: "Roboto", sans-serif;
-=======
       font-family: 'Roboto', sans-serif;
->>>>>>> Stashed changes
-=======
-      font-family: 'Roboto', sans-serif;
->>>>>>> Stashed changes
       color: #1E2529;
       margin: 15px 0; }
     .accordion-section-content ul .sub-section-title {
@@ -1288,23 +1034,11 @@ a {
   .accordion-section-title:hover .expand-more {
     opacity: 1;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); } }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-@media (max-width: 1224px) and (min-width: 1024px) {
-  .section-5 .container .accordion-container {
-    width: 50%; } }
-=======
-=======
->>>>>>> Stashed changes
 
 @media (max-width: 1224px) and (min-width: 1024px) {
   .section-5 .container .accordion-container {
     width: 50%; } }
 
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 @media (max-width: 1024px) {
   .section-5 .container .story-container {
     margin-bottom: 0; }
@@ -1316,23 +1050,11 @@ a {
     .section-5 .container .story-container .accordion-container {
       width: 100%;
       float: none; } }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-@media (max-width: 490px) {
-  .accordion-section-title {
-    max-width: 75%; } }
-=======
-=======
->>>>>>> Stashed changes
 
 @media (max-width: 490px) {
   .accordion-section-title {
     max-width: 75%; } }
 
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 .section-6 {
   position: relative;
   padding: 50px;
@@ -1435,14 +1157,7 @@ a {
 @media (max-width: 1224px) and (min-width: 1024px) {
   .section-6 .container .info-container .opening-time {
     max-width: 50%; } }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
-=======
-
->>>>>>> Stashed changes
 @media (max-width: 1024px) {
   .section-6 .container .info-container .info {
     max-width: 100%;
@@ -1458,14 +1173,7 @@ a {
     .section-6 .container .info-container .opening-time #times-table {
       max-width: 100%;
       width: 100%; } }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
-=======
-
->>>>>>> Stashed changes
 @media (max-width: 450px) {
   .section-6 .container .info-container .opening-time {
     max-width: 100%;
@@ -1477,14 +1185,7 @@ a {
       width: 100%; }
       .section-6 .container .info-container .opening-time #times-table p {
         font-size: 16px; } }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
-=======
-
->>>>>>> Stashed changes
 @media (max-width: 400px) {
   .section-6 .container .info-container .info .info-specific .info-text {
     max-width: 75%; }
@@ -1498,14 +1199,7 @@ a {
       width: 100%; }
       .section-6 .container .info-container .opening-time #times-table p {
         font-size: 13px; } }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
-=======
-
->>>>>>> Stashed changes
 .footer {
   position: relative;
   bottom: 0;
@@ -1542,16 +1236,8 @@ a {
       max-width: 1200px;
       margin: 0 auto;
       top: 50%;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
->>>>>>> Stashed changes
-=======
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
->>>>>>> Stashed changes
       transform: translateY(-50%);
       -webkit-columns: 3;
       -moz-columns: 3;
@@ -1594,62 +1280,30 @@ a {
         position: absolute;
         right: 50%;
         top: 50%;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
         -webkit-transform: translate(50%, -50%);
         -ms-transform: translate(50%, -50%);
->>>>>>> Stashed changes
-=======
-        -webkit-transform: translate(50%, -50%);
-        -ms-transform: translate(50%, -50%);
->>>>>>> Stashed changes
         transform: translate(50%, -50%); }
       .footer .footer-small .footer-small-container .info-text {
         text-align: center;
         bottom: 0;
         position: absolute;
         right: 50%;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-        transform: translateX(50%); } }
-=======
-=======
->>>>>>> Stashed changes
         -webkit-transform: translateX(50%);
         -ms-transform: translateX(50%);
         transform: translateX(50%); } }
 
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 @media (max-width: 640px) {
   .footer .footer-small .footer-small-container p {
     font-size: 17px; }
     .footer .footer-small .footer-small-container p i {
       font-size: 20px !important; } }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
-=======
-
->>>>>>> Stashed changes
 @media (max-width: 321px) {
   .footer .footer-small .footer-small-container p {
     font-size: 12px; }
     .footer .footer-small .footer-small-container p i {
       font-size: 18px !important; } }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
-=======
-
->>>>>>> Stashed changes
 .slideshow-full {
   width: 100vw;
   height: 100vh;
@@ -1666,14 +1320,7 @@ a {
     position: -o-sticky;
     top: 0;
     z-index: 995; } }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
-=======
-
->>>>>>> Stashed changes
 .navbar {
   position: absolute;
   width: 100%;
@@ -1685,31 +1332,15 @@ a {
     .navbar .container .logo {
       position: absolute;
       left: 50px;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
->>>>>>> Stashed changes
-=======
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
->>>>>>> Stashed changes
       transform: translateY(-50%);
       top: 50%; }
       .navbar .container .logo a {
         position: relative;
         text-decoration: none;
         color: white;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-        font-family: "Montserrat", sans-serif;
-=======
         font-family: 'Montserrat', sans-serif;
->>>>>>> Stashed changes
-=======
-        font-family: 'Montserrat', sans-serif;
->>>>>>> Stashed changes
         font-size: 25px;
         -webkit-font-smoothing: antialiased;
         padding: 40px 0; }
@@ -1723,16 +1354,8 @@ a {
       position: absolute;
       top: 50%;
       left: 50%;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
       -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
->>>>>>> Stashed changes
-=======
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
->>>>>>> Stashed changes
       transform: translate(-50%, -50%); }
       .navbar .container .menu ul {
         margin: 0;
@@ -1742,15 +1365,7 @@ a {
           display: inline-block;
           margin: 0 25px; }
           .navbar .container .menu ul li .link-menu {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-            font-family: "Roboto", sans-serif;
-=======
             font-family: 'Roboto', sans-serif;
->>>>>>> Stashed changes
-=======
-            font-family: 'Roboto', sans-serif;
->>>>>>> Stashed changes
             font-size: 25px;
             -webkit-font-smoothing: antialiased;
             color: white;
@@ -1760,16 +1375,8 @@ a {
       position: absolute;
       height: 40px;
       top: 50%;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
->>>>>>> Stashed changes
-=======
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
->>>>>>> Stashed changes
       transform: translateY(-50%);
       right: 50px; }
       .navbar .container .phone-nav i {
@@ -1782,11 +1389,3 @@ a {
     position: fixed;
     top: 0;
     z-index: 996; } }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-
-/*# sourceMappingURL=main.css.map */
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
