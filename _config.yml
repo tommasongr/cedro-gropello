@@ -28,3 +28,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - .sass-cache
+
+ingnore:
+  - prepros-6.config
