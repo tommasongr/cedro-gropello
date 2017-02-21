@@ -522,7 +522,12 @@ a {
 
 @media (max-width: 1224px) {
   .section-1 .container .story-container .headshot {
-    width: 50%; } }
+    width: 50%; }
+  .section-1 .container .skill-container .certification .certification-circle {
+    padding-bottom: calc(25% - 62.5px);
+    width: calc(25% - 62.5px);
+    float: left;
+    margin-left: 50px; } }
 
 @media (max-width: 1024px) {
   .section-1 .container .story-container .story {
@@ -536,22 +541,28 @@ a {
     float: none;
     position: relative;
     height: 500px; }
-  .section-1 .container .skills-container .skills {
-    max-width: 100%;
-    width: 100%;
-    float: none;
-    margin-bottom: 50px; }
-  .section-1 .container .skills-container .certification {
-    max-width: 100%;
-    width: 100%;
-    float: none; }
-    .section-1 .container .skills-container .certification .certification-circle:last-of-type {
-      float: none;
-      margin-left: 50px; } }
+  .section-1 .container .skill-container .certification {
+    width: 90%; }
+    .section-1 .container .skill-container .certification .certification-circle {
+      padding-bottom: calc(25% - 50px);
+      width: calc(25% - 50px);
+      float: left;
+      margin-left: 40px; } }
 
 @media (max-width: 768px) {
   .section-1 .container .story-container .headshot {
-    height: 250px; } }
+    height: 250px; }
+  .section-1 .container .skill-container .certification {
+    width: 80%; }
+    .section-1 .container .skill-container .certification .certification-circle {
+      padding-bottom: calc(50% - 45px);
+      width: calc(50% - 45px);
+      float: left;
+      margin-left: 30px; }
+      .section-1 .container .skill-container .certification .certification-circle:nth-of-type(1) {
+        margin-bottom: 20px; }
+      .section-1 .container .skill-container .certification .certification-circle:nth-of-type(2) {
+        margin-bottom: 20px; } }
 
 .section-2 {
   position: relative;
@@ -657,8 +668,8 @@ a {
         display: table; }
       .section-3 .container .partners-container .partners-1, .section-3 .container .partners-container .partners-2, .section-3 .container .partners-container .partners-3 {
         position: relative;
-        height: 170px;
-        width: 170px;
+        height: 160px;
+        width: 160px;
         display: inline-block;
         cursor: pointer; }
         .section-3 .container .partners-container .partners-1 .partners-1-img, .section-3 .container .partners-container .partners-1 .partners-2-img, .section-3 .container .partners-container .partners-1 .partners-3-img, .section-3 .container .partners-container .partners-2 .partners-1-img, .section-3 .container .partners-container .partners-2 .partners-2-img, .section-3 .container .partners-container .partners-2 .partners-3-img, .section-3 .container .partners-container .partners-3 .partners-1-img, .section-3 .container .partners-container .partners-3 .partners-2-img, .section-3 .container .partners-container .partners-3 .partners-3-img {
@@ -787,8 +798,8 @@ a {
 
 .circle-selected {
   position: relative;
-  height: 170px;
-  width: 170px;
+  height: 160px;
+  width: 160px;
   border: solid 4px #FF6B6B;
   border-radius: 50%;
   top: 50%;
@@ -799,6 +810,12 @@ a {
 
 .circle-show {
   display: block; }
+
+@media (min-width: 1224px) {
+  .section-3 .container .partners-container .partners-1 .partners-1-img, .section-3 .container .partners-container .partners-1 .partners-2-img, .section-3 .container .partners-container .partners-1 .partners-3-img, .section-3 .container .partners-container .partners-2 .partners-1-img, .section-3 .container .partners-container .partners-2 .partners-2-img, .section-3 .container .partners-container .partners-2 .partners-3-img, .section-3 .container .partners-container .partners-3 .partners-1-img, .section-3 .container .partners-container .partners-3 .partners-2-img, .section-3 .container .partners-container .partners-3 .partners-3-img {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+    .section-3 .container .partners-container .partners-1 .partners-1-img:hover, .section-3 .container .partners-container .partners-1 .partners-2-img:hover, .section-3 .container .partners-container .partners-1 .partners-3-img:hover, .section-3 .container .partners-container .partners-2 .partners-1-img:hover, .section-3 .container .partners-container .partners-2 .partners-2-img:hover, .section-3 .container .partners-container .partners-2 .partners-3-img:hover, .section-3 .container .partners-container .partners-3 .partners-1-img:hover, .section-3 .container .partners-container .partners-3 .partners-2-img:hover, .section-3 .container .partners-container .partners-3 .partners-3-img:hover {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); } }
 
 @media (max-width: 1224px) {
   .section-3 .container .pandhy-s-container .special-intro-container .special-intro-text, .section-3 .container .pnei-container .special-intro-container .special-intro-text, .section-3 .container .crystal-nails-container .special-intro-container .special-intro-text {
@@ -828,15 +845,15 @@ a {
 
 @media (max-width: 768px) {
   .section-3 .container .partners-container .partners-1, .section-3 .container .partners-container .partners-2, .section-3 .container .partners-container .partners-3 {
-    height: 140px;
-    width: 140px; }
+    height: 135px;
+    width: 135px; }
     .section-3 .container .partners-container .partners-1 .partners-1-img, .section-3 .container .partners-container .partners-1 .partners-2-img, .section-3 .container .partners-container .partners-1 .partners-3-img, .section-3 .container .partners-container .partners-2 .partners-1-img, .section-3 .container .partners-container .partners-2 .partners-2-img, .section-3 .container .partners-container .partners-2 .partners-3-img, .section-3 .container .partners-container .partners-3 .partners-1-img, .section-3 .container .partners-container .partners-3 .partners-2-img, .section-3 .container .partners-container .partners-3 .partners-3-img {
       position: absolute;
       height: 120px;
       width: 120px; }
   .section-3 .container .partners-container .circle-selected {
-    height: 140px;
-    width: 140px; }
+    height: 135px;
+    width: 135px; }
   .section-3 .container .partners-container .partners-1 {
     margin-left: 0;
     left: 0; }
@@ -845,27 +862,27 @@ a {
 
 @media (max-width: 500px) {
   .section-3 .container .partners-container .partners-1, .section-3 .container .partners-container .partners-2, .section-3 .container .partners-container .partners-3 {
-    height: 120px;
-    width: 120px; }
+    height: 115px;
+    width: 115px; }
     .section-3 .container .partners-container .partners-1 .partners-1-img, .section-3 .container .partners-container .partners-1 .partners-2-img, .section-3 .container .partners-container .partners-1 .partners-3-img, .section-3 .container .partners-container .partners-2 .partners-1-img, .section-3 .container .partners-container .partners-2 .partners-2-img, .section-3 .container .partners-container .partners-2 .partners-3-img, .section-3 .container .partners-container .partners-3 .partners-1-img, .section-3 .container .partners-container .partners-3 .partners-2-img, .section-3 .container .partners-container .partners-3 .partners-3-img {
       position: absolute;
       height: 105px;
       width: 105px; }
   .section-3 .container .partners-container .circle-selected {
-    height: 120px;
-    width: 120px; } }
+    height: 115px;
+    width: 115px; } }
 
 @media (max-width: 400px) {
   .section-3 .container .partners-container .partners-1, .section-3 .container .partners-container .partners-2, .section-3 .container .partners-container .partners-3 {
-    height: 100px;
-    width: 100px; }
+    height: 95px;
+    width: 95px; }
     .section-3 .container .partners-container .partners-1 .partners-1-img, .section-3 .container .partners-container .partners-1 .partners-2-img, .section-3 .container .partners-container .partners-1 .partners-3-img, .section-3 .container .partners-container .partners-2 .partners-1-img, .section-3 .container .partners-container .partners-2 .partners-2-img, .section-3 .container .partners-container .partners-2 .partners-3-img, .section-3 .container .partners-container .partners-3 .partners-1-img, .section-3 .container .partners-container .partners-3 .partners-2-img, .section-3 .container .partners-container .partners-3 .partners-3-img {
       position: absolute;
       height: 85px;
       width: 85px; }
   .section-3 .container .partners-container .circle-selected {
-    height: 100px;
-    width: 100px; } }
+    height: 95px;
+    width: 95px; } }
 
 @media (max-width: 321px) {
   .section-3 .container .partners-container .partners-1, .section-3 .container .partners-container .partners-2, .section-3 .container .partners-container .partners-3 {
