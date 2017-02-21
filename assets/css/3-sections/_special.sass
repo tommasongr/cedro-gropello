@@ -20,8 +20,8 @@
 
       .partners-1, .partners-2, .partners-3
         position: relative
-        height: 170px
-        width: 170px
+        height: 160px
+        width: 160px
         display: inline-block
         cursor: pointer
 
@@ -162,8 +162,8 @@
 
 .circle-selected
   position: relative
-  height: 170px
-  width: 170px
+  height: 160px
+  width: 160px
   border: solid 4px $color-love
   border-radius: 50%
   top: 50%
@@ -173,6 +173,17 @@
 
 .circle-show
   display: block
+
+@media (min-width: $ipad-landscape)
+  .section-3
+    .container
+      .partners-container
+        .partners-1, .partners-2, .partners-3
+          .partners-1-img, .partners-2-img, .partners-3-img
+            transition: $transition-shadows
+
+            &:hover
+              box-shadow: $shadow-3
 
 @media (max-width: $ipad-landscape)
   .section-3
@@ -217,8 +228,8 @@
     .container
       .partners-container
         .partners-1, .partners-2, .partners-3
-          height: 140px
-          width: 140px
+          height: 135px
+          width: 135px
 
           .partners-1-img, .partners-2-img, .partners-3-img
             position: absolute
@@ -226,8 +237,8 @@
             width: 120px
 
         .circle-selected
-          height: 140px
-          width: 140px
+          height: 135px
+          width: 135px
 
         .partners-1
           margin-left: 0
@@ -242,8 +253,8 @@
       .partners-container
 
         .partners-1, .partners-2, .partners-3
-          height: 120px
-          width: 120px
+          height: 115px
+          width: 115px
 
           .partners-1-img, .partners-2-img, .partners-3-img
             position: absolute
@@ -251,8 +262,8 @@
             width: 105px
 
         .circle-selected
-          height: 120px
-          width: 120px
+          height: 115px
+          width: 115px
 
 @media (max-width: 400px)
   .section-3
@@ -260,8 +271,8 @@
       .partners-container
 
         .partners-1, .partners-2, .partners-3
-          height: 100px
-          width: 100px
+          height: 95px
+          width: 95px
 
           .partners-1-img, .partners-2-img, .partners-3-img
             position: absolute
@@ -269,8 +280,8 @@
             width: 85px
 
         .circle-selected
-          height: 100px
-          width: 100px
+          height: 95px
+          width: 95px
 
 @media (max-width: $mobile-portrait)
   .section-3

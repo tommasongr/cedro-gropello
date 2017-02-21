@@ -61,6 +61,9 @@
             box-shadow: $shadow-3
 
 $certification-grid-desk: (gutter: 70px)
+$certification-grid-ipad: (gutter: 50px)
+$certification-grid-ipad2: (gutter: 40px)
+$certification-grid-mobile: (gutter: 30px)
 
 @media (min-width: $ipad-landscape)
   .section-1
@@ -78,6 +81,12 @@ $certification-grid-desk: (gutter: 70px)
       .story-container
         .headshot
           width: 50%
+
+      .skill-container
+        .certification
+          .certification-circle
+            padding-bottom: calc(25% - 62.5px)
+            @include grid-column(3, $certification-grid-ipad)
 
 
 @media (max-width: $ipad-portrait)
@@ -97,21 +106,12 @@ $certification-grid-desk: (gutter: 70px)
           position: relative
           height: 500px
 
-      .skills-container
-        .skills
-          max-width: 100%
-          width: 100%
-          float: none
-          margin-bottom: 50px
-
+      .skill-container
         .certification
-          max-width: 100%
-          width: 100%
-          float: none
-
-          .certification-circle:last-of-type
-            float: none
-            margin-left: 50px
+          width: 90%
+          .certification-circle
+            padding-bottom: calc(25% - 50px)
+            @include grid-column(3, $certification-grid-ipad2)
 
 @media (max-width: $mobile-landscape)
   .section-1
@@ -119,3 +119,16 @@ $certification-grid-desk: (gutter: 70px)
       .story-container
         .headshot
           height: 250px
+
+      .skill-container
+        .certification
+          width: 80%
+          .certification-circle
+            padding-bottom: calc(50% - 45px)
+            @include grid-column(6, $certification-grid-mobile)
+
+            &:nth-of-type(1)
+              margin-bottom: 20px
+
+            &:nth-of-type(2)
+              margin-bottom: 20px
