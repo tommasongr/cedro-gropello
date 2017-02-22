@@ -38,12 +38,16 @@
       position: relative
       width: 100%
 
+      a
+        cursor: pointer
+
       .certification
         position: relative
         width: 75%
         height: 100%
         margin: 0 auto
         padding-top: 30px
+        cursor: pointer!important
         @include grid-container
 
         .certification-circle
@@ -51,11 +55,11 @@
           width: 100%
           padding-bottom: calc(25% - 87.5px)
           border-radius: 50%
-          background-color: red
+          background-position: center center
+          background-size: cover
           box-shadow: $shadow-2
           margin: 0 auto
           transition: $transition-shadows
-          cursor: pointer
 
           &:hover
             box-shadow: $shadow-3

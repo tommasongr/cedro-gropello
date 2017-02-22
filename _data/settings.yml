@@ -12,17 +12,17 @@ menus:
   url: "#contatti"
 certifications:
 - name: Diploma BCM Milano
-  icon: ''
+  icon: 'assets/img/partners/BCM-Milano.jpg'
   image: ''
 - name: Diploma Pandhys
-  icon: ''
-  image: ''
+  icon: 'assets/img/partners/Pandhys-Mini.jpg'
+  image: 'assets/img/partners/docu/DIPLOMA_PANDHYS.jpg'
 - name: Diploma PNEI
-  icon: ''
-  image: ''
+  icon: 'assets/img/partners/PNEI_1.jpg'
+  image: 'assets/img/partners/docu/PNEI_1.jpg'
 - name: Diploma Crystal Nails
-  icon: ''
-  image: ''
+  icon: 'assets/img/partners/Crystal-Nails.jpg'
+  image: 'assets/img/partners/docu/DIPLOMA_CRYSTAL-NAILS.jpg'
 times:
 - name: Lunedì
   morning: "-"

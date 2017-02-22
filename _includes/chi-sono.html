@@ -22,9 +22,9 @@
 
       <div class="certification">
         {% for certification in site.data.settings.certifications %}
-        <div class="certification-circle" style="background-image: url({{ certification.icon }})" title="{{ certification.name }}" >
-          <a href="{{ certification.image }}" data-lightbox="certifications"></a>
-        </div>
+          <a href="{{ certification.image }}" data-lightbox="certifications">
+            <div class="certification-circle" style="background-image: url({{ certification.icon }})" title="{{ certification.name }}"></div>
+          </a>
         {% endfor %}
       </div>
 
