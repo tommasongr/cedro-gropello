@@ -74,9 +74,9 @@ $(document).ready(function() {
 $('.partners-2').on('click', function(){
 	$('.pandhy-s-container').addClass('hidden');
 	$('.pnei-container').removeClass('hidden');
-	$('.circle-selected').addClass('hidden');
 	$('.crystal-nails-container').addClass('hidden');
-	$(this).find('.circle-selected').removeClass('hidden');
+	$('.partners-1-img, .partners-2-img, .partners-3-img').removeClass('shadow-select');
+	$('.partners-2-img').addClass('shadow-select');
 
 });
 
@@ -84,8 +84,8 @@ $('.partners-1').on('click', function(){
 	$('.pandhy-s-container').removeClass('hidden');
 	$('.pnei-container').addClass('hidden');
 	$('.crystal-nails-container').addClass('hidden');
-	$('.circle-selected').addClass('hidden');
-	$(this).find('.circle-selected').removeClass('hidden');
+	$('.partners-1-img, .partners-2-img, .partners-3-img').removeClass('shadow-select');
+	$('.partners-1-img').addClass('shadow-select');
 
 });
 
@@ -93,8 +93,8 @@ $('.partners-3').on('click', function(){
 	$('.crystal-nails-container').removeClass('hidden');
 	$('.pnei-container').addClass('hidden');
 	$('.pandhy-s-container').addClass('hidden');
-	$('.circle-selected').addClass('hidden');
-	$(this).find('.circle-selected').removeClass('hidden');
+	$('.partners-1-img, .partners-2-img, .partners-3-img').removeClass('shadow-select');
+	$('.partners-3-img').addClass('shadow-select');
 
 });
 
