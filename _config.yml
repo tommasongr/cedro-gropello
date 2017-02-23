@@ -15,10 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Cedro Gropello
 email: cedro.gropello@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Al Cedro vi aspetta un'esperienza da sogno, scoprite il centro e i nostri prodotti.
-  Offriamo servizi dai più classici a innovativi trattamenti di cura e bellezza con prodotti
-  naturali. Bellezza, benessere e relax per tutti...
+description: Al Cedro vi aspetta un'esperienza da sogno, scoprite il centro e i nostri prodotti. Offriamo servizi dai più classici a innovativi trattamenti di cura e bellezza con prodotti naturali. Bellezza, benessere e relax per tutti...
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://cedrogropello.com"
 
