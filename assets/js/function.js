@@ -106,3 +106,9 @@ $('.maps-container')
 	.mouseleave(function(){
 			$(this).find('iframe').removeClass('maps-clicked')
 		});
+
+// NOTE: Mobile DropDown Menu
+
+$('.btn-menu').on("click",function(event){
+    $(".menu").slideToggle();
+});

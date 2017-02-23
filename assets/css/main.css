@@ -459,7 +459,8 @@ a {
 .section-1 {
   position: relative;
   padding: 50px;
-  background-color: white; }
+  background-color: white;
+  z-index: 998; }
   .section-1 .container {
     position: relative;
     width: 100%;
@@ -573,7 +574,8 @@ a {
 .section-2 {
   position: relative;
   padding: 50px;
-  background-color: #F5F5F5; }
+  background-color: #F5F5F5;
+  z-index: 998; }
   .section-2 .container {
     position: relative;
     width: 100%;
@@ -656,7 +658,8 @@ a {
 .section-3 {
   position: relative;
   padding: 50px;
-  background-color: white; }
+  background-color: white;
+  z-index: 998; }
   .section-3 .container {
     position: relative;
     width: 100%;
@@ -879,7 +882,8 @@ a {
 .section-4 {
   position: relative;
   padding: 50px;
-  background-color: #F5F5F5; }
+  background-color: #F5F5F5;
+  z-index: 998; }
   .section-4 .container {
     position: relative;
     width: 100%;
@@ -934,7 +938,8 @@ a {
 .section-5 {
   position: relative;
   padding: 50px;
-  background-color: white; }
+  background-color: white;
+  z-index: 998; }
   .section-5 .container {
     position: relative;
     width: 100%;
@@ -1054,7 +1059,8 @@ a {
 .section-6 {
   position: relative;
   padding: 50px;
-  background-color: #F5F5F5; }
+  background-color: #F5F5F5;
+  z-index: 998; }
   .section-6 .container {
     position: relative;
     width: 100%;
@@ -1199,7 +1205,8 @@ a {
 .footer {
   position: relative;
   bottom: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 998; }
   .footer .footer-big {
     position: relative;
     height: 100%;
@@ -1289,10 +1296,12 @@ a {
         transform: translateX(50%); } }
 
 @media (max-width: 640px) {
-  .footer .footer-small .footer-small-container p {
-    font-size: 17px; }
-    .footer .footer-small .footer-small-container p i {
-      font-size: 20px !important; } }
+  .footer .footer-small {
+    height: 100px; }
+    .footer .footer-small .footer-small-container p {
+      font-size: 17px; }
+      .footer .footer-small .footer-small-container p i {
+        font-size: 20px !important; } }
 
 @media (max-width: 321px) {
   .footer .footer-small .footer-small-container p {
@@ -1315,7 +1324,69 @@ a {
     position: -ms-sticky;
     position: -o-sticky;
     top: 0;
-    z-index: 995; } }
+    z-index: 995; }
+    .slideshow-full .slide-down-btn {
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      bottom: 10px;
+      border-radius: 50%;
+      height: 70px;
+      width: 70px;
+      cursor: pointer;
+      -webkit-animation: btn-bounce 2s linear infinite;
+      animation: btn-bounce 2s linear infinite; }
+  @-webkit-keyframes btn-bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0); }
+    40% {
+      -webkit-transform: translateY(-30px);
+      transform: translateY(-30px); }
+    60% {
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px); } }
+  @keyframes btn-bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0); }
+    40% {
+      -webkit-transform: translateY(-30px);
+      transform: translateY(-30px); }
+    60% {
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px); } }
+      .slideshow-full .slide-down-btn i {
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        font-size: 70px; } }
+
+@media (max-width: 1224px) {
+  .slideshow-full {
+    width: 100vw;
+    height: 50vh;
+    background-image: url(/assets/img/cedro-gropello-home-slide-1.jpg);
+    background-size: cover;
+    background-position: center center; }
+    .slideshow-full .link-menu {
+      display: none; } }
+
+@media (max-width: 768px) {
+  .slideshow-full {
+    width: 100vw;
+    height: 35vh;
+    background-image: url(/assets/img/cedro-gropello-home-slide-1.jpg);
+    background-size: cover;
+    background-position: center center; }
+    .slideshow-full .link-menu {
+      display: none; } }
 
 .navbar {
   position: absolute;
@@ -1340,14 +1411,9 @@ a {
         font-size: 25px;
         -webkit-font-smoothing: antialiased;
         padding: 40px 0; }
-        .navbar .container .logo a div {
-          width: 100px;
-          height: 100%;
-          background-image: url(/assets/img/cedro-gropello-logo-home.png);
-          background-repeat: no-repeat;
-          background-size: contain; }
     .navbar .container .menu {
       position: absolute;
+      width: 70%;
       top: 50%;
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
@@ -1384,4 +1450,67 @@ a {
   .navbar {
     position: fixed;
     top: 0;
-    z-index: 996; } }
+    z-index: 996; }
+    .navbar .container .menu {
+      display: block !important; }
+      .navbar .container .menu ul {
+        text-align: center; }
+    .navbar .container .btn-menu {
+      display: none; } }
+
+@media (max-width: 1224px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    height: 55px; }
+    .navbar .container {
+      background-color: #1E2529; }
+      .navbar .container .btn-menu {
+        position: absolute;
+        height: 30px;
+        left: 20px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        cursor: pointer; }
+        .navbar .container .btn-menu i {
+          color: white;
+          font-size: 30px; }
+      .navbar .container .logo {
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        top: 50%; }
+      .navbar .container .menu {
+        position: absolute;
+        width: 100%;
+        top: 55px;
+        left: 0;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+        background-color: white;
+        display: none; }
+        .navbar .container .menu ul {
+          margin: 0;
+          padding: 15px; }
+          .navbar .container .menu ul li {
+            list-style: none;
+            display: block;
+            margin: 15px 0;
+            text-align: center; }
+            .navbar .container .menu ul li .link-menu {
+              font-family: 'Roboto', sans-serif;
+              font-size: 25px;
+              -webkit-font-smoothing: antialiased;
+              color: #1E2529;
+              text-decoration: none;
+              padding: 0; }
+      .navbar .container .phone-nav {
+        height: 30px;
+        right: 20px; }
+        .navbar .container .phone-nav i {
+          font-size: 30px; } }
