@@ -23,17 +23,9 @@
         -webkit-font-smoothing: antialiased
         padding: 40px 0
 
-
-        div
-          width: 100px
-          height: 100%
-          background-image: url(/assets/img/cedro-gropello-logo-home.png)
-          background-repeat: no-repeat
-          background-size: contain
-
     .menu
       position: absolute
-      //border: solid red 1px
+      width: 70%
       top: 50%
       left: 50%
       transform: translate(-50%, -50%)
@@ -72,3 +64,78 @@
     position: fixed
     top: 0
     z-index: 996
+
+    .container
+
+      .menu
+        display: block!important
+
+        ul
+          text-align: center
+
+      .btn-menu
+        display: none
+
+@media (max-width: $ipad-landscape)
+  .navbar
+    position: fixed
+    top: 0
+    z-index: 999
+    height: 55px
+
+    .container
+      background-color: $color-element-dark
+
+      .btn-menu
+        position: absolute
+        height: 30px
+        left: 20px
+        top: 50%
+        transform: translateY(-50%)
+        cursor: pointer
+
+        i
+          color: white
+          font-size: 30px
+
+
+      .logo
+        left: 50%
+        transform: translate(-50%, -50%)
+        top: 50%
+
+        a
+
+      .menu
+        position: absolute
+        width: 100%
+        top: 55px
+        left: 0
+        transform: none
+        background-color: white
+        display: none
+
+        ul
+          margin: 0
+          padding: 15px
+
+          li
+            list-style: none
+            display: block
+            margin: 15px 0
+            text-align: center
+
+            .link-menu
+              font-family: 'Roboto', sans-serif
+              font-size: 25px
+              -webkit-font-smoothing: antialiased
+              color: $color-element-dark
+              text-decoration: none
+              padding: 0
+
+      .phone-nav
+        height: 30px
+        right: 20px
+
+        i
+          font-size: 30px

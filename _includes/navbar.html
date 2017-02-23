@@ -1,11 +1,15 @@
 <div class="navbar">
   <div class="container center">
 
+    <div class="btn-menu" id="main-btn-menu">
+      <i class="material-icons">menu</i>
+    </div>
+
     <div class="logo">
       <a href="{{ site.baseurl }}">Il Cedro</a>
     </div>
 
-    <div class="menu">
+    <div class="menu" id="main-menu">
       <ul>
         {% for menu in site.data.settings.menus %}
         <li><a href="{{ menu.url }}" class="link-menu">{{ menu.name }}</a></li>

@@ -14,3 +14,54 @@
     position: -o-sticky
     top: 0
     z-index: 995
+
+    .slide-down-btn
+      position: absolute
+      left: 50%
+      transform: translateX(-50%)
+      bottom: 10px
+      border-radius: 50%
+      height: 70px
+      width: 70px
+      cursor: pointer
+      animation: btn-bounce 2s linear infinite
+
+      @keyframes btn-bounce
+        0%, 20%, 50%, 80%, 100%
+          transform: translateY(0)
+
+        40%
+          transform: translateY(-30px)
+
+        60%
+          transform: translateY(-15px)
+
+      i
+        color: white
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        font-size: 70px
+
+@media (max-width: $ipad-landscape)
+  .slideshow-full
+    width: 100vw
+    height: 50vh
+    background-image: url(/assets/img/cedro-gropello-home-slide-1.jpg)
+    background-size: cover
+    background-position: center center
+
+    .link-menu
+      display: none
+
+@media (max-width: $mobile-landscape)
+  .slideshow-full
+    width: 100vw
+    height: 35vh
+    background-image: url(/assets/img/cedro-gropello-home-slide-1.jpg)
+    background-size: cover
+    background-position: center center
+
+    .link-menu
+      display: none
