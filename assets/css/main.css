@@ -454,7 +454,9 @@ a {
   .grow:hover {
     -webkit-transform: none;
     -ms-transform: none;
-    transform: none; } }
+    transform: none; }
+  h1 {
+    margin-top: 55px; } }
 
 .section-1 {
   position: relative;
@@ -1315,6 +1317,36 @@ a {
   background-image: url(/assets/img/cedro-gropello-home-slide-1.jpg);
   background-size: cover;
   background-position: center center; }
+  .slideshow-full .overlay-full {
+    width: 100%;
+    height: 100%;
+    background-color: #1E2529;
+    opacity: 0.3; }
+  .slideshow-full .logo-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center; }
+    .slideshow-full .logo-container .logo-full {
+      width: 396px;
+      height: 357px;
+      background-image: url(/assets/img/cedro-gropello-logo-home.png);
+      background-size: cover; }
+    .slideshow-full .logo-container .title-full {
+      color: white;
+      position: relative;
+      font-size: 6em;
+      margin-top: 20px;
+      font-family: 'Montserrat', roboto, sans-serif; }
+    .slideshow-full .logo-container .subtitle-full {
+      color: white;
+      position: relative;
+      font-size: 3em;
+      margin-top: 10px;
+      font-family: 'Montserrat', roboto, sans-serif; }
 
 @media (min-width: 1224px) {
   .slideshow-full {
@@ -1328,16 +1360,11 @@ a {
     .slideshow-full .slide-down-btn {
       position: absolute;
       left: 50%;
-      -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%) !important;
+      -ms-transform: translateX(-50%) !important;
+      transform: translateX(-50%) !important;
       bottom: 10px;
-      border-radius: 50%;
-      height: 70px;
-      width: 70px;
-      cursor: pointer;
-      -webkit-animation: btn-bounce 2s linear infinite;
-      animation: btn-bounce 2s linear infinite; }
+      cursor: pointer; }
   @-webkit-keyframes btn-bounce {
     0%, 20%, 50%, 80%, 100% {
       -webkit-transform: translateY(0);
@@ -1360,33 +1387,13 @@ a {
       transform: translateY(-15px); } }
       .slideshow-full .slide-down-btn i {
         color: white;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        font-size: 70px; } }
+        font-size: 70px;
+        -webkit-animation: btn-bounce 2s linear infinite;
+        animation: btn-bounce 2s linear infinite; } }
 
 @media (max-width: 1224px) {
   .slideshow-full {
-    width: 100vw;
-    height: 50vh;
-    background-image: url(/assets/img/cedro-gropello-home-slide-1.jpg);
-    background-size: cover;
-    background-position: center center; }
-    .slideshow-full .link-menu {
-      display: none; } }
-
-@media (max-width: 768px) {
-  .slideshow-full {
-    width: 100vw;
-    height: 35vh;
-    background-image: url(/assets/img/cedro-gropello-home-slide-1.jpg);
-    background-size: cover;
-    background-position: center center; }
-    .slideshow-full .link-menu {
-      display: none; } }
+    display: none; } }
 
 .navbar {
   position: absolute;
@@ -1493,7 +1500,8 @@ a {
         -ms-transform: none;
         transform: none;
         background-color: white;
-        display: none; }
+        display: none;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
         .navbar .container .menu ul {
           margin: 0;
           padding: 15px; }
