@@ -1,0 +1,9 @@
+<div class="products">
+  {% for product in site.data.prodotti.products limit: 8 %}
+  <div class="card">
+    <div class="img-card" style="background-image: url({{ product.image }})"></div>
+    <div class="overlay"></div>
+  </div>
+  {% endfor %}
+
+</div>

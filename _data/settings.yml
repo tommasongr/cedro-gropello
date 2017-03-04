@@ -4,6 +4,8 @@ menus:
   url: "#chi-sono"
 - name: Il centro
   url: "#il-centro"
+- name: Partners
+  url: "#special"
 - name: Prodotti
   url: "#special"
 - name: Servizi
