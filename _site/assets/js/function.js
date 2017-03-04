@@ -32,7 +32,15 @@ jQuery(document).ready(function($) {
 				delay: 7000,
 				nav: true
 			});
+
+			var slider = $('.testimonials-slider').unslider();
+
+			$('.unslider-nav > ol > li').click(function() {
+				slider.data('unslider').stop();
+			});
 		});
+
+
 
 // NOTE: Accordion
 
