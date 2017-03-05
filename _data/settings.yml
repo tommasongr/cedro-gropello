@@ -15,7 +15,7 @@ menus:
 certifications:
 - name: Diploma BCM Milano
   icon: assets/img/partners/BCM-Milano.jpg
-  image: 'assets/img/partners/docu/DIPLOMA_BCM.jpg'
+  image: assets/img/partners/docu/DIPLOMA_BCM.jpg
 - name: Diploma Pandhys
   icon: assets/img/partners/Pandhys-Mini.jpg
   image: assets/img/partners/docu/DIPLOMA_PANDHYS.jpg
