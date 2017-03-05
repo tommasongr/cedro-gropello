@@ -10,9 +10,20 @@
     margin: 0 auto
     cursor: pointer
     overflow: hidden
+    box-shadow: $shadow-2
 
-    &:hover .overlay
-      opacity: 0.6
+    &:hover
+      .overlay
+        opacity: 0.4
+
+      .img-card
+        transform: scale(1.3)
+
+      .title
+        opacity: 1
+
+      .quantity
+        opacity: 1
 
     .img-card
       position: absolute
@@ -20,6 +31,7 @@
       height: 100%
       background-size: cover
       background-position: center center
+      transition: all .5s ease-in-out
 
     .overlay
       position: absolute
@@ -27,7 +39,32 @@
       height: 100%
       background-color: $color-element-dark
       opacity: 0
-      transition: $transition-shadows
+      transition: all .5s ease-in-out
+
+    .title
+      position: absolute
+      margin: 0
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      color: white
+      font-size: 35px
+      line-height: 1
+      text-align: center
+      transition: all .5s ease-in-out
+      opacity: 0
+
+    .quantity
+      position: absolute
+      left: 50%
+      bottom: 15px
+      transform: translateX(-50%)
+      color: white
+      font-family: 'Roboto', sans-serif
+      font-size: 20px
+      -webkit-font-smoothing: antialiased
+      transition: all .5s ease-in-out
+      opacity: 0
 
 @media (min-width: $ipad-landscape)
   .products
@@ -42,6 +79,13 @@
       padding-bottom: calc(50% - 0.75em)
       margin-bottom: 0.5em
       @include grid-column(6, $card-grid-ipad)
+
+  .img-card
+    transition: none
+
+  .card:hover
+    .img-card
+      transform: none!important
 
 @media (max-width: $mobile-landscape)
   .products

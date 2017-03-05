@@ -2,4 +2,46 @@
 products:
 - name: Contorno occhi
   quantity: 15
-  image: assets/img/rosemary-imoesiri.jpg
+  image: assets/img/products/contorno-occhi-15ml-corretta.jpg
+- name: Crema cellulite
+  quantity: 150
+  image: assets/img/products/crema-cellulite-150ml-corretta.jpg
+- name: Crema depurante
+  quantity: 30-75
+  image: assets/img/products/crema-depurante-30ml-corretta.jpg
+- name: Crema doposole
+  quantity: 100
+  image: assets/img/products/crema-doposole-100ml-corretta.jpg
+- name: Crema drenante
+  quantity: 30-75
+  image: assets/img/products/crema-drenante-30ml-corretta.jpg
+- name: Crema elasticizzante
+  quantity: 150
+  image: assets/img/products/crema-elasticizzante-150ml-corretta.jpg
+- name: Crema energizzante
+  quantity: 30-75
+  image: assets/img/products/crema-energizzante-30ml-corretta.jpg
+- name: Crema equilibrante
+  quantity: 30-75
+  image: assets/img/products/crema-equilibrante-30ml-corretta.jpg
+- name:
+  quantity:
+  image:
+- name:
+  quantity:
+  image:
+- name:
+  quantity:
+  image:
+- name:
+  quantity:
+  image:
+- name:
+  quantity:
+  image:
+- name:
+  quantity:
+  image:
+- name:
+  quantity:
+  image:
