@@ -66,6 +66,24 @@
       transition: all .5s ease-in-out
       opacity: 0
 
+.products-more
+  position: relative
+  width: 100%
+  margin-top: 15px
+  height: 40px
+
+  .material-icons
+    font-size: 40px
+    line-height: normal
+    color: $color-text-light
+    position: absolute
+    left: 50%
+    transform: translate(-50%)
+    transition: $transition-shadows
+
+    &:hover
+      color: $color-element-dark
+
 @media (min-width: $ipad-landscape)
   .products
     .card
