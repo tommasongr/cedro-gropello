@@ -59,6 +59,29 @@
             width: 100%
             height: 350px
 
+    .new-review
+      //padding: 10px
+      //border: solid red 1px
+      text-align: center
+      margin-top: 60px
+
+      a
+        transition: $transition-shadows
+
+        &:hover
+          color: white!important
+
+        span
+          font-size: 22px
+          -webkit-font-smoothing: antialiased
+          border: solid $color-link 2px
+          padding: 15px
+          border-radius: 30px
+          cursor: pointer
+
+          &:hover
+            background-color: $color-link
+
 @media (max-width: $ipad-landscape)
   .section-4
     display: none

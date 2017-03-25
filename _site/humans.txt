@@ -1,15 +1,13 @@
-# humanstxt.org/
 # The humans responsible & technology colophon
 
-# TEAM
+# AUTHOR
 
-    <name> -- <role> -- <twitter>
+    Tommaso Negri -- Graphic Designer & Front end Developer -- 99designs /tommasonegri -- Github /tommaso-negri
 
 # THANKS
 
-    <name>
+    Rosemary Imoesiri -- Guido Donati
 
 # TECHNOLOGY COLOPHON
 
-    CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+    CSS3, HTML5, Javascript, jQuery, Normalize.css, Jekyll, sass, Github
