@@ -936,6 +936,22 @@ a {
       background-color: red;
       width: 100%;
       height: 350px; }
+    .section-4 .container .new-review {
+      text-align: center;
+      margin-top: 60px; }
+      .section-4 .container .new-review a {
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+        .section-4 .container .new-review a:hover {
+          color: white !important; }
+        .section-4 .container .new-review a span {
+          font-size: 22px;
+          -webkit-font-smoothing: antialiased;
+          border: solid #65AAFE 2px;
+          padding: 15px;
+          border-radius: 30px;
+          cursor: pointer; }
+          .section-4 .container .new-review a span:hover {
+            background-color: #65AAFE; }
 
 @media (max-width: 1224px) {
   .section-4 {
