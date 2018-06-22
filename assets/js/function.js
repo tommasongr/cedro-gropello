@@ -120,3 +120,23 @@ $('.maps-container')
 $('.btn-menu').on("click",function(event){
     $(".menu").slideToggle();
 });
+
+// NOTE: Terms Pop-Up
+
+document.addEventListener('DOMContentLoaded', function(){
+  document.querySelector('#cookie-btn').addEventListener('click', function(){
+    document.querySelector('.terms-container').classList.remove('hidden');
+    document.querySelector('.terms-container > .cookie').classList.remove('hidden');
+  })
+
+  document.querySelector('#terms-btn').addEventListener('click', function(){
+    document.querySelector('.terms-container').classList.remove('hidden');
+    document.querySelector('.terms-container > .terms').classList.remove('hidden');
+  })
+
+  document.querySelector('.terms-container > .terms-close-btn').addEventListener('click', function(){
+    document.querySelector('.terms-container').classList.add('hidden');
+    document.querySelector('.terms-container > .terms').classList.add('hidden');
+    document.querySelector('.terms-container > .cookie').classList.add('hidden');
+  })
+})
