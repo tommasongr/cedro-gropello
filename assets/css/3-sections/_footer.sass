@@ -17,28 +17,20 @@
       margin: 0 auto
       top: 50%
       transform: translateY(-50%)
-      @include columns(3)
+      display: grid
+      grid-template-columns: 1fr 1fr 1fr
 
       p
         position: relative
         margin: 0
         color: white
-
-      .author
-        text-align: center
-
-        .material-icons
-          line-height: 0
-          vertical-align: sub
-          color: $color-love
-
-        a
-          color: white
+        grid-column: 1/2
 
       .info-text
         position: relative
-        text-align: right
+        text-align: center
         overflow: auto
+        grid-column: 2/3
 
         a
           color: white
@@ -47,6 +39,20 @@
             font-size: 24px
             vertical-align: sub
             margin-right: 8px
+
+      .terms-text
+        grid-column: 3/4
+        text-align: right
+
+        span
+          cursor: pointer
+          transition: $transition-shadows
+
+          &:hover
+            color: $color-link-hover
+
+        span:last-of-type
+          margin-left: 20px
 
 @media (max-width: $ipad-landscape)
   .footer
